@@ -1,5 +1,13 @@
 # Änderungsprotokoll
 
+## 1.3.0 – 04.11.2026
+- Bildschirmfotos lassen sich anklicken und groß ansehen (auf allen Seiten, auch TurnierPilot); schließen per Klick, Esc oder ×
+
+## 1.2.0 – 04.11.2026
+- Echte Bildschirmfotos statt Platzhaltern: Live-Ansicht (Start), Turnierplan, Liga-Spieltag, 14.1-Scoreboard, TV-Ansicht, Rating, Statistik, Konten und Rollen (Funktionen) sowie Pool-Scoreboard (Scoreboards)
+- Für Vereine: Bilder zu „Zustimmen“ und „Spieler anlegen“ bei den Einstiegsschritten
+- Persönliche Angaben in den Bildern unkenntlich gemacht; Originalbilder liegen nur lokal und werden nicht veröffentlicht
+
 ## 1.1.1 – 04.11.2026
 - TurnierPilot-Seite: „Gespeicherte Turniere können einer Serie zugeordnet werden“ statt „werden … zugeordnet“
 
