@@ -1,2 +1,6 @@
 # CueDesk.de
-Website von Cuedesk IONOS CNAME zeigt auf Github
+
+Website von CueDesk, ausgeliefert über GitHub Pages unter https://www.cuedesk.de.
+Bei IONOS zeigt ein CNAME-Eintrag für `www` auf `daucoder2001.github.io`.
+
+Version: siehe `VERSION`, Änderungen: siehe `CHANGELOG.md`.
