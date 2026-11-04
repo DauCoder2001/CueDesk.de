@@ -261,6 +261,7 @@ p { margin: 0 0 1em; }
 
 /* Echte Bildschirmfotos */
 .bildschirm img { border: 1px solid var(--rand); border-radius: 12px; box-shadow: var(--schatten); background: #fff; }
+.bildschirm figcaption { margin-top: .6rem; color: var(--text-leise); font-size: .9rem; text-align: center; }
 
 code { font-family: ui-monospace, Consolas, monospace; font-size: .9em; background: var(--flaeche-2); padding: .1em .35em; border-radius: 4px; }
 
