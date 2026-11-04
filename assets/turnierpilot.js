@@ -35,9 +35,10 @@
       const exe = (rel.assets || []).find((a) => /\.exe$/i.test(a.name));
       const datum = rel.published_at ? new Date(rel.published_at).toLocaleDateString("de-DE") : "";
       if (exe) {
-        const knopf = document.getElementById("tp-download");
-        knopf.href = exe.browser_download_url;
-        knopf.textContent = "TurnierPilot " + version + " herunterladen";
+        document.querySelectorAll("#tp-download, [data-tp-download]").forEach((knopf) => {
+          knopf.href = exe.browser_download_url;
+          knopf.textContent = "TurnierPilot " + version + " herunterladen";
+        });
         const name = document.getElementById("tp-dateiname");
         if (name) name.innerHTML = "<code>" + esc(exe.name) + "</code>";
       }

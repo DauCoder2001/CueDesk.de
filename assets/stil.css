@@ -210,7 +210,8 @@ p { margin: 0 0 1em; }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) .schritte li::before { color: #0d1620; }
 }
-.schritte li strong { display: block; margin-bottom: 4px; }
+.schritte li > strong { display: block; margin-bottom: 4px; }
+.schritte li .knopf { margin-top: .8rem; }
 .schritte li p { margin: 0; color: var(--text-leise); font-size: .97rem; }
 
 /* ---------- Fragen ---------- */

@@ -1,5 +1,9 @@
 # Änderungsprotokoll
 
+## 1.3.1 – 04.11.2026
+- TurnierPilot, Schritt „Herunterladen“: eigener Download-Knopf statt Verweis auf „den Knopf oben“
+- Fett gesetzte Wörter in den Schritt-Listen stehen wieder im Fließtext statt in eigener Zeile
+
 ## 1.3.0 – 04.11.2026
 - Bildschirmfotos lassen sich anklicken und groß ansehen (auf allen Seiten, auch TurnierPilot); schließen per Klick, Esc oder ×
 
