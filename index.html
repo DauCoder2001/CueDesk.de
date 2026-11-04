@@ -3,26 +3,181 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="version" content="0.1.0">
-  <title>CueDesk</title>
-  <style>
-    :root { --bg:#f6f7f9; --fg:#1b1f24; --muted:#5b6470; --accent:#1f6feb; }
-    @media (prefers-color-scheme: dark) { :root { --bg:#0f1216; --fg:#e8eaed; --muted:#9aa3ad; --accent:#58a6ff; } }
-    html,body { margin:0; height:100%; }
-    body { background:var(--bg); color:var(--fg); font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
-           display:flex; align-items:center; justify-content:center; text-align:center; padding:0 16px; }
-    h1 { font-size:2.5rem; margin:0 0 .5rem; }
-    p { color:var(--muted); margin:.25rem 0 1.5rem; }
-    a.btn { display:inline-block; padding:.7rem 1.4rem; border-radius:8px; background:var(--accent); color:#fff; text-decoration:none; font-weight:600; }
-    footer { position:fixed; bottom:12px; left:0; right:0; font-size:.75rem; color:var(--muted); }
-  </style>
+  <title>CueDesk – Turniere, Liga und Scoreboards für Billardvereine</title>
+  <meta name="description" content="CueDesk führt den Spielbetrieb von Billardvereinen: Turniere, Liga-Spieltage, Scoreboards an den Tischen, Live-Anzeige, Vereins-Rating und Statistik. Kostenlos, im Browser.">
+  <meta property="og:title" content="CueDesk – Turniere, Liga und Scoreboards für Billardvereine">
+  <meta property="og:description" content="CueDesk führt den Spielbetrieb von Billardvereinen: Turniere, Liga-Spieltage, Scoreboards an den Tischen, Live-Anzeige, Vereins-Rating und Statistik. Kostenlos, im Browser.">
+  <meta property="og:image" content="https://www.cuedesk.de/bilder/icon-192.png">
+  <meta property="og:locale" content="de_DE">
+  <meta name="theme-color" content="#f6f1e4">
+  <link rel="icon" type="image/png" sizes="32x32" href="bilder/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="bilder/favicon-48.png">
+  <link rel="apple-touch-icon" href="bilder/apple-touch-icon.png">
+  <link rel="stylesheet" href="assets/stil.css">
 </head>
 <body>
+  <header class="kopf">
+    <div class="huelle">
+      <a class="marke" href="index.html"><img src="bilder/icon-192.png" alt="" width="36" height="36">CueDesk</a>
+      <button class="menue-knopf" type="button" aria-expanded="false" aria-controls="navi">Menü</button>
+      <nav class="navi" id="navi" aria-label="Hauptmenü">
+        <a href="index.html">Start</a>
+        <a href="funktionen.html">Funktionen</a>
+        <a href="fuer-vereine.html">Für Vereine</a>
+        <a href="fragen.html">Fragen</a>
+        <a href="kontakt.html">Kontakt</a>
+        <a class="knopf" href="https://app.cuedesk.de">Zur App</a>
+      </nav>
+    </div>
+  </header>
+
   <main>
-    <h1>CueDesk</h1>
-    <p>Hier entsteht die neue Website.</p>
-    <a class="btn" href="https://app.cuedesk.de">Zur App</a>
+    <section class="buehne">
+      <div class="huelle">
+        <div>
+          <span class="dachzeile">Für Billardvereine</span>
+          <h1>Turniere, Liga und Scoreboards in einer Anwendung.</h1>
+          <p class="unterzeile">CueDesk führt den ganzen Spielbetrieb eures Vereins: vom Auslosen über die Tablets an den Tischen bis zur Rangliste. Ergebnisse landen sofort dort, wo sie gebraucht werden.</p>
+          <div class="knopfreihe">
+            <a class="knopf" href="kontakt.html">Verein anmelden</a>
+            <a class="knopf zweit" href="funktionen.html">Funktionen ansehen</a>
+          </div>
+          <ul class="merkmale-kurz">
+            <li>kostenlos</li>
+            <li>läuft im Browser</li>
+            <li>Server in Frankfurt</li>
+            <li>Daten jederzeit exportierbar</li>
+          </ul>
+        </div>
+        <div class="bildplatz" role="img" aria-label="Platzhalter für ein Bildschirmfoto der Turnierübersicht">
+          <div class="leiste"><i></i><i></i><i></i></div>
+          <div class="inhalt">
+            <div class="zeile kurz akzent"></div>
+            <div class="zeile mittel"></div>
+            <div class="kacheln"><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b></div>
+            <div class="zeile"></div>
+            <div class="zeile mittel"></div>
+          </div>
+          <span class="hinweis">Bildschirmfoto folgt: Live-Ansicht aller Tische</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="abschnitt getoent">
+      <div class="huelle">
+        <span class="dachzeile">Was CueDesk abdeckt</span>
+        <h2>Alles, was an einem Spielabend anfällt</h2>
+        <p class="einleitung">Statt Zettel, Excel-Listen und WhatsApp-Nachrichten liegt alles in einer Datenbank. Nichts muss abgetippt oder zwischen Programmen hin- und hergeschoben werden.</p>
+        <div class="raster drei">
+          <article class="karte">
+            <h3><span class="symbol"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0V4z"/><path d="M17 5h3v2a3 3 0 0 1-3 3M7 5H4v2a3 3 0 0 0 3 3"/></svg></span>Turniere</h3>
+            <p>Jeder gegen jeden, zwei Gruppen, Gruppen mit KO-Runde oder Doppel-KO. Mit Auslosung, Zeitprognose und Vorgabe nach Spielstärke.</p>
+          </article>
+          <article class="karte">
+            <h3><span class="symbol"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M3 20a6 6 0 0 1 12 0M14.5 20a4.5 4.5 0 0 1 7-3.7"/></svg></span>Liga-Spieltage</h3>
+            <p>Mannschaften und Kader je Saison, Aufstellung mit Regelprüfung, Hin- und Rückrunde und der fertige Spielbericht.</p>
+          </article>
+          <article class="karte">
+            <h3><span class="symbol"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M11 18h2"/></svg></span>Scoreboards am Tisch</h3>
+            <p>Tablets zählen 8-, 9-, 10-Ball und 14.1 endlos. Sie holen sich ihre Partie selbst und melden das Ergebnis direkt zurück.</p>
+          </article>
+          <article class="karte">
+            <h3><span class="symbol"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg></span>Live und Fernseher</h3>
+            <p>Der Fernseher im Vereinsheim zeigt alle Tische. Mitglieder schauen von zu Hause zu, auf Wunsch auch über einen öffentlichen Link.</p>
+          </article>
+          <article class="karte">
+            <h3><span class="symbol"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 15l4-4 3 3 5-6"/></svg></span>Vereins-Rating</h3>
+            <p>Die Spielstärke je Disziplin als Zahl, jede Nacht neu berechnet. Daraus entsteht auf Wunsch die Vorgabe im Turnier.</p>
+          </article>
+          <article class="karte">
+            <h3><span class="symbol"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h10M4 18h7"/></svg></span>Ranglisten und Statistik</h3>
+            <p>Serienwertung, Bestenlisten, Saison-Überblick und Archiv. Jedes Mitglied sieht seine eigene Statistik.</p>
+          </article>
+        </div>
+        <div class="knopfreihe"><a class="knopf zweit" href="funktionen.html">Alle Funktionen im Detail</a></div>
+      </div>
+    </section>
+
+    <section class="abschnitt">
+      <div class="huelle">
+        <span class="dachzeile">So läuft ein Turnierabend</span>
+        <h2>Vier Schritte, ein grüner Knopf</h2>
+        <p class="einleitung">Der grüne Knopf zeigt immer den nächsten Schritt. So findet sich auch zurecht, wer nur ab und zu die Turnierleitung übernimmt.</p>
+        <ol class="schritte waagerecht">
+          <li><strong>Anlegen</strong><p>Name, Disziplin, Modus und Race wählen. Die Vorgaben des Vereins sind schon eingestellt.</p></li>
+          <li><strong>Teilnehmer eintragen</strong><p>Aus der Spielerliste wählen, Gäste ergänzen, gesetzte Spieler markieren.</p></li>
+          <li><strong>Auslosen</strong><p>CueDesk erstellt Gruppen und Spielplan und verteilt die Partien auf die Tische.</p></li>
+          <li><strong>Spielen</strong><p>Die Tablets zählen mit. Tabellen, Fernseher und Live-Ansicht sind sofort aktuell.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="abschnitt getoent">
+      <div class="huelle">
+        <div class="raster zwei" style="margin-top:0">
+          <div>
+            <span class="dachzeile">Daten und Datenschutz</span>
+            <h2>Eure Daten bleiben eure Daten</h2>
+            <p>CueDesk speichert bewusst wenig: keine Anschrift, kein Geburtsdatum, keine Bankdaten. Die Datenbank liegt in der EU (Frankfurt), jeder Verein ist streng von den anderen getrennt.</p>
+            <p>Der Verein kann alle Daten jederzeit herunterladen und die Nutzung jederzeit beenden. Namen erscheinen auf öffentlichen Seiten nur mit Einwilligung.</p>
+            <a href="fuer-vereine.html#datenschutz">Mehr zum Datenschutz</a>
+          </div>
+          <div>
+            <span class="dachzeile">Kosten</span>
+            <h2>Kostenlos, ohne Haken</h2>
+            <p>CueDesk ist ein privat betriebenes Projekt aus dem Vereinsleben, entstanden für den eigenen Spielbetrieb. Die Nutzung kostet nichts, es gibt kein Abo und keine Werbung.</p>
+            <p>Ihr braucht nur Geräte mit einem aktuellen Browser: ein Notebook für die Turnierleitung, Tablets für die Tische und auf Wunsch einen Fernseher.</p>
+            <a href="fuer-vereine.html">So kommt euer Verein zu CueDesk</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="abschnitt">
+      <div class="huelle">
+        <div class="aufruf">
+          <h2>Interesse für euren Verein?</h2>
+          <p>Schreibt kurz, wer ihr seid und wie ihr spielt. Ihr bekommt eine Antwort und, wenn es passt, einen Zugang für euren Vereins-Administrator.</p>
+          <div class="knopfreihe">
+            <a class="knopf" href="kontakt.html">Kontakt aufnehmen</a>
+            <a class="knopf zweit" href="fragen.html">Häufige Fragen</a>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
-  <footer>Version 0.1.0</footer>
+
+  <footer class="fuss">
+    <div class="huelle">
+      <div>
+        <a class="marke" href="index.html"><img src="bilder/icon-192.png" alt="" width="36" height="36">CueDesk</a>
+        <p style="margin-top:.8rem">Der Spielbetrieb eures Billardvereins in einer Anwendung. Kostenlos und privat betrieben.</p>
+      </div>
+      <div>
+        <h4>Website</h4>
+        <ul>
+          <li><a href="funktionen.html">Funktionen</a></li>
+          <li><a href="fuer-vereine.html">Für Vereine</a></li>
+          <li><a href="fragen.html">Häufige Fragen</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Rechtliches</h4>
+        <ul>
+          <li><a href="https://app.cuedesk.de/impressum.html">Impressum</a></li>
+          <li><a href="https://app.cuedesk.de/datenschutz.html">Datenschutz</a></li>
+          <li><a href="https://app.cuedesk.de/nutzungsbedingungen.html">Nutzungsbedingungen</a></li>
+          <li><a href="https://app.cuedesk.de/auftragsverarbeitung.html">Auftragsverarbeitung</a></li>
+        </ul>
+      </div>
+      <div class="unten">
+        <span>© <span data-jahr>2026</span> CueDesk · Matthias Haas</span>
+        <span data-version>Version</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/seite.js"></script>
 </body>
 </html>

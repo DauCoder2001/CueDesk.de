@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Funktionen · CueDesk</title>
+  <meta name="description" content="Turniere, Liga-Spieltage, Tablet-Scoreboards, Live- und TV-Anzeige, Vereins-Rating, Ranglisten und Statistik: alle Funktionen von CueDesk im Überblick.">
+  <meta property="og:title" content="Funktionen · CueDesk">
+  <meta property="og:description" content="Turniere, Liga-Spieltage, Tablet-Scoreboards, Live- und TV-Anzeige, Vereins-Rating, Ranglisten und Statistik: alle Funktionen von CueDesk im Überblick.">
+  <meta property="og:image" content="https://www.cuedesk.de/bilder/icon-192.png">
+  <meta property="og:locale" content="de_DE">
+  <meta name="theme-color" content="#f6f1e4">
+  <link rel="icon" type="image/png" sizes="32x32" href="bilder/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="bilder/favicon-48.png">
+  <link rel="apple-touch-icon" href="bilder/apple-touch-icon.png">
+  <link rel="stylesheet" href="assets/stil.css">
+</head>
+<body>
+  <header class="kopf">
+    <div class="huelle">
+      <a class="marke" href="index.html"><img src="bilder/icon-192.png" alt="" width="36" height="36">CueDesk</a>
+      <button class="menue-knopf" type="button" aria-expanded="false" aria-controls="navi">Menü</button>
+      <nav class="navi" id="navi" aria-label="Hauptmenü">
+        <a href="index.html">Start</a>
+        <a href="funktionen.html">Funktionen</a>
+        <a href="fuer-vereine.html">Für Vereine</a>
+        <a href="fragen.html">Fragen</a>
+        <a href="kontakt.html">Kontakt</a>
+        <a class="knopf" href="https://app.cuedesk.de">Zur App</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="seitenkopf">
+      <div class="huelle">
+        <span class="dachzeile">Funktionen</span>
+        <h1>Was CueDesk für euren Verein erledigt</h1>
+        <p>Von der Turnierplanung bis zur Saisonstatistik. Alles läuft im Browser und greift auf dieselben Daten zu, ob am Notebook, am Tablet, am Fernseher oder am Handy.</p>
+      </div>
+    </section>
+
+    <section class="abschnitt" style="padding-top:24px">
+      <div class="huelle">
+
+        <div class="block" id="turniere">
+          <div class="block-text">
+            <h2>Turniere</h2>
+            <p>Ein Turnier läuft in vier Schritten: anlegen, Teilnehmer eintragen, auslosen, spielen.</p>
+            <ul>
+              <li><strong>Modi:</strong> Einzelgruppe (jeder gegen jeden), zwei Gruppen mit Platzierungsduellen, Gruppen mit KO-Runde, Doppel-KO und Teamvergleich</li>
+              <li><strong>Disziplinen:</strong> 8-, 9- und 10-Ball, Race je Runde einstellbar</li>
+              <li>Gesetzte Spieler, Gäste, Spieler nachtragen, Rundensperre</li>
+              <li>Rangfolge nach Siegen, Differenz und direktem Vergleich, Stichkampf bei Gleichstand</li>
+              <li>Vorgabe (Handicap) aus dem Vereins-Rating, auf Wunsch</li>
+              <li>Zeitprognose, Pause, Rückgängig und Verlauf je Partie</li>
+              <li>Eigene Turnierarten wie „Pokal“ oder „Vereinsmeisterschaft“, Filter in der Turnierliste</li>
+            </ul>
+          </div>
+          <div class="bildplatz" role="img" aria-label="Platzhalter für ein Bildschirmfoto des Turnierplans">
+            <div class="leiste"><i></i><i></i><i></i></div>
+            <div class="inhalt">
+              <div class="zeile kurz akzent"></div>
+              <div class="zeile"></div><div class="zeile mittel"></div><div class="zeile"></div><div class="zeile mittel"></div><div class="zeile"></div>
+            </div>
+            <span class="hinweis">Bildschirmfoto folgt: Turnierplan</span>
+          </div>
+        </div>
+
+        <div class="block gedreht" id="liga">
+          <div class="block-text">
+            <h2>Liga-Spieltage</h2>
+            <p>Ein Spieltag besteht aus zwei Begegnungen gegen dieselbe Mannschaft, die zweite mit getauschtem Heimrecht.</p>
+            <ul>
+              <li>Mannschaften und Kader je Saison mit Stammspielern, Kapitän und Spielberechtigung</li>
+              <li>Aufstellung mit Regelprüfung: niemand doppelt in einer Runde, gesperrte Spieler werden nicht angeboten</li>
+              <li>Festgespielte Spieler werden automatisch erkannt</li>
+              <li>Saisonübersicht mit Partiepunkten, Matchpunkten und Einsätzen</li>
+              <li>Fertiger Spielbericht</li>
+            </ul>
+          </div>
+          <div class="bildplatz" role="img" aria-label="Platzhalter für ein Bildschirmfoto eines Liga-Spieltags">
+            <div class="leiste"><i></i><i></i><i></i></div>
+            <div class="inhalt">
+              <div class="zeile kurz akzent"></div>
+              <div class="kacheln"><b></b><b></b><b></b><b></b></div>
+              <div class="zeile"></div><div class="zeile mittel"></div>
+            </div>
+            <span class="hinweis">Bildschirmfoto folgt: Liga-Spieltag</span>
+          </div>
+        </div>
+
+        <div class="block" id="scoreboards">
+          <div class="block-text">
+            <h2>Scoreboards an den Tischen</h2>
+            <p>An jedem Tisch liegt ein Tablet. Es wird einmal mit einem sechsstelligen Code gekoppelt und meldet sich danach selbst an.</p>
+            <ul>
+              <li>Pool-Scoreboard für 8-, 9- und 10-Ball mit Anstoß-Anzeige und Seitenwechsel</li>
+              <li>14.1 endlos mit vollständigem Aufnahme-Protokoll</li>
+              <li>Holt sich die nächste Turnierpartie selbst, das Ergebnis geht direkt an die Turnierleitung</li>
+              <li>Freie Spiele ohne Turnier jederzeit möglich</li>
+              <li>Zählt auch ohne Internetverbindung weiter</li>
+              <li>Auf dem iPad als Icon auf dem Home-Bildschirm, im Vollbild</li>
+            </ul>
+          </div>
+          <div class="bildplatz tafel" role="img" aria-label="Platzhalter für ein Bildschirmfoto des Scoreboards">
+            <div class="leiste"><i></i><i></i><i></i></div>
+            <div class="inhalt">
+              <div><div class="stand">5</div><div class="name">Spieler A</div></div>
+              <div class="trenner">:</div>
+              <div><div class="stand">3</div><div class="name">Spieler B</div></div>
+            </div>
+            <span class="hinweis">Bildschirmfoto folgt: Scoreboard</span>
+          </div>
+        </div>
+
+        <div class="block gedreht" id="live">
+          <div class="block-text">
+            <h2>Live-Anzeige und Fernseher</h2>
+            <p>Solange ein Turnier läuft, sind die Spielstände aller Tische überall sofort zu sehen.</p>
+            <ul>
+              <li>TV-Ansicht für den Fernseher im Vereinsheim, startet von selbst</li>
+              <li>Mitglieder schauen von unterwegs zu, auf Wunsch mit Chat während des Turniers</li>
+              <li>Öffentlicher Live-Link für Zuschauer; Namen nur mit Einwilligung, sonst Kürzel</li>
+            </ul>
+          </div>
+          <div class="bildplatz" role="img" aria-label="Platzhalter für ein Bildschirmfoto der TV-Ansicht">
+            <div class="leiste"><i></i><i></i><i></i></div>
+            <div class="inhalt">
+              <div class="kacheln"><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b></div>
+              <div class="zeile mittel"></div>
+            </div>
+            <span class="hinweis">Bildschirmfoto folgt: TV-Ansicht</span>
+          </div>
+        </div>
+
+        <div class="block" id="rating">
+          <div class="block-text">
+            <h2>Vereins-Rating und Vorgabe</h2>
+            <p>Das Rating zeigt die Spielstärke je Disziplin (8-, 9-, 10-Ball und Multi-Ball). Der Vereinsschnitt liegt bei 500; 100 Punkte Unterschied bedeuten die doppelte Chance, ein Rack zu gewinnen.</p>
+            <ul>
+              <li>Gerechnet wird Rack für Rack aus Turnieren und Liga-Spieltagen</li>
+              <li>Jede Nacht und beim Abschließen eines Turniers neu berechnet</li>
+              <li>Für jeden Wert nachvollziehbar, welche Partien eingegangen sind</li>
+              <li>Daraus die Vorgabe im Turnier: Der Schwächere startet mit Sätzen Vorsprung</li>
+              <li>Abschaltbar, wenn der Verein ohne Rating spielen will</li>
+            </ul>
+          </div>
+          <div class="bildplatz" role="img" aria-label="Platzhalter für ein Bildschirmfoto der Rating-Liste">
+            <div class="leiste"><i></i><i></i><i></i></div>
+            <div class="inhalt">
+              <div class="zeile kurz akzent"></div>
+              <div class="zeile"></div><div class="zeile"></div><div class="zeile mittel"></div><div class="zeile"></div><div class="zeile mittel"></div>
+            </div>
+            <span class="hinweis">Bildschirmfoto folgt: Rating</span>
+          </div>
+        </div>
+
+        <div class="block gedreht" id="statistik">
+          <div class="block-text">
+            <h2>Ranglisten, Serien und Statistik</h2>
+            <ul>
+              <li><strong>Serien:</strong> Punkte aus mehreren Turnieren, mit Streichergebnissen</li>
+              <li><strong>Ranglisten:</strong> Siegquote, höchste Serie im 14.1, Titel und Podestplätze</li>
+              <li><strong>Pool- und 14.1-Statistik:</strong> Bilanz, Verlauf, Form und Gegner; jedes Mitglied sieht nur sich selbst</li>
+              <li><strong>Saison-Überblick:</strong> Spiele, Spielzeit je Tisch, Ø Spieldauer, aktivste Spieler</li>
+              <li><strong>Archiv:</strong> alle beendeten Turniere und Partien, mit direktem Vergleich zweier Spieler</li>
+            </ul>
+          </div>
+          <div class="bildplatz" role="img" aria-label="Platzhalter für ein Bildschirmfoto der Statistik">
+            <div class="leiste"><i></i><i></i><i></i></div>
+            <div class="inhalt">
+              <div class="zeile kurz akzent"></div>
+              <div class="kacheln"><b></b><b></b><b></b><b></b></div>
+              <div class="zeile"></div>
+            </div>
+            <span class="hinweis">Bildschirmfoto folgt: Statistik</span>
+          </div>
+        </div>
+
+        <div class="block" id="verwaltung">
+          <div class="block-text">
+            <h2>Spieler, Konten und Rollen</h2>
+            <p>Ein Spieler braucht kein Konto. Konten vergebt ihr nur an die, die etwas sehen oder tun sollen.</p>
+            <ul>
+              <li><strong>Lesezugang:</strong> Live, Ranglisten, Archiv und die eigene Statistik</li>
+              <li><strong>Turnierleiter:</strong> Turniere anlegen und durchführen, Tablets koppeln</li>
+              <li><strong>Sportwart:</strong> zusätzlich Spieler, Mannschaften und Einladungen</li>
+              <li><strong>Vereins-Administrator:</strong> alles, auch Einstellungen und Datenexport</li>
+              <li>Anmeldung per E-Mail-Link, Einladung direkt aus CueDesk</li>
+              <li>Schutzwort für heikle Aktionen am Tablet</li>
+              <li>Altdaten aus „Turnier light“ lassen sich einlesen</li>
+            </ul>
+          </div>
+          <div class="bildplatz" role="img" aria-label="Platzhalter für ein Bildschirmfoto der Kontenverwaltung">
+            <div class="leiste"><i></i><i></i><i></i></div>
+            <div class="inhalt">
+              <div class="zeile kurz akzent"></div>
+              <div class="zeile"></div><div class="zeile mittel"></div><div class="zeile"></div>
+            </div>
+            <span class="hinweis">Bildschirmfoto folgt: Konten und Rollen</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="abschnitt">
+      <div class="huelle">
+        <div class="aufruf">
+          <h2>Passt das zu eurem Verein?</h2>
+          <p>Meldet euch, dann klären wir gemeinsam, ob CueDesk zu eurem Spielbetrieb passt.</p>
+          <div class="knopfreihe">
+            <a class="knopf" href="kontakt.html">Kontakt aufnehmen</a>
+            <a class="knopf zweit" href="fuer-vereine.html">So geht der Einstieg</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="fuss">
+    <div class="huelle">
+      <div>
+        <a class="marke" href="index.html"><img src="bilder/icon-192.png" alt="" width="36" height="36">CueDesk</a>
+        <p style="margin-top:.8rem">Der Spielbetrieb eures Billardvereins in einer Anwendung. Kostenlos und privat betrieben.</p>
+      </div>
+      <div>
+        <h4>Website</h4>
+        <ul>
+          <li><a href="funktionen.html">Funktionen</a></li>
+          <li><a href="fuer-vereine.html">Für Vereine</a></li>
+          <li><a href="fragen.html">Häufige Fragen</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Rechtliches</h4>
+        <ul>
+          <li><a href="https://app.cuedesk.de/impressum.html">Impressum</a></li>
+          <li><a href="https://app.cuedesk.de/datenschutz.html">Datenschutz</a></li>
+          <li><a href="https://app.cuedesk.de/nutzungsbedingungen.html">Nutzungsbedingungen</a></li>
+          <li><a href="https://app.cuedesk.de/auftragsverarbeitung.html">Auftragsverarbeitung</a></li>
+        </ul>
+      </div>
+      <div class="unten">
+        <span>© <span data-jahr>2026</span> CueDesk · Matthias Haas</span>
+        <span data-version>Version</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/seite.js"></script>
+</body>
+</html>
