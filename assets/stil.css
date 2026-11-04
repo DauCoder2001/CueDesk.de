@@ -90,7 +90,7 @@ p { margin: 0 0 1em; }
   padding: 8px 12px; font: inherit; color: var(--text); cursor: pointer;
 }
 
-@media (max-width: 860px) {
+@media (max-width: 1060px) {
   .menue-knopf { display: block; }
   .navi {
     display: none; position: absolute; top: 64px; left: 0; right: 0;
@@ -258,3 +258,11 @@ p { margin: 0 0 1em; }
 .fuss a { color: var(--text-leise); text-decoration: none; }
 .fuss a:hover { color: var(--akzent); text-decoration: underline; }
 .fuss .unten { grid-column: 1 / -1; border-top: 1px solid var(--rand); padding-top: 18px; font-size: .85rem; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; }
+
+/* Echte Bildschirmfotos */
+.bildschirm img { border: 1px solid var(--rand); border-radius: 12px; box-shadow: var(--schatten); background: #fff; }
+
+code { font-family: ui-monospace, Consolas, monospace; font-size: .9em; background: var(--flaeche-2); padding: .1em .35em; border-radius: 4px; }
+
+/* Sprungziele nicht unter dem festen Kopf verstecken */
+[id] { scroll-margin-top: 80px; }
