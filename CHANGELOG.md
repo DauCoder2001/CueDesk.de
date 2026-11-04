@@ -1,5 +1,8 @@
 # Änderungsprotokoll
 
+## 1.3.2 – 04.11.2026
+- TurnierPilot, Schritt „Herunterladen“: Download-Knopf kleiner und passend zum Text
+
 ## 1.3.1 – 04.11.2026
 - TurnierPilot, Schritt „Herunterladen“: eigener Download-Knopf statt Verweis auf „den Knopf oben“
 - Fett gesetzte Wörter in den Schritt-Listen stehen wieder im Fließtext statt in eigener Zeile

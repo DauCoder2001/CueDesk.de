@@ -112,6 +112,7 @@ p { margin: 0 0 1em; }
 .knopf:hover { background: var(--akzent-dunkel); border-color: var(--akzent-dunkel); }
 .knopf.zweit { background: transparent; color: var(--akzent) !important; }
 .knopf.zweit:hover { background: var(--akzent-hell); }
+.knopf.klein { padding: .4rem .9rem; font-size: .9rem; border-radius: 6px; }
 .navi .knopf { padding: .5rem 1rem; }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) .knopf:not(.zweit) { color: #0d1620 !important; }
@@ -211,7 +212,7 @@ p { margin: 0 0 1em; }
   :root:not([data-theme="light"]) .schritte li::before { color: #0d1620; }
 }
 .schritte li > strong { display: block; margin-bottom: 4px; }
-.schritte li .knopf { margin-top: .8rem; }
+.schritte li .knopf { margin-top: .6rem; }
 .schritte li p { margin: 0; color: var(--text-leise); font-size: .97rem; }
 
 /* ---------- Fragen ---------- */
