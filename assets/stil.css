@@ -262,6 +262,17 @@ p { margin: 0 0 1em; }
 /* Echte Bildschirmfotos */
 .bildschirm img { border: 1px solid var(--rand); border-radius: 12px; box-shadow: var(--schatten); background: #fff; }
 .bildschirm figcaption { margin-top: .6rem; color: var(--text-leise); font-size: .9rem; text-align: center; }
+.bildschirm img.zoombar { cursor: zoom-in; transition: transform .15s ease; }
+.bildschirm img.zoombar:hover { transform: scale(1.01); }
+.bildschirm img.zoombar:focus-visible { outline: 3px solid var(--akzent); outline-offset: 3px; }
+.gross-offen { overflow: hidden; }
+dialog.gross { border: 0; padding: 0; margin: auto; background: transparent; max-width: 96vw; max-height: 96vh; overflow: visible; cursor: zoom-out; }
+dialog.gross::backdrop { background: rgba(0, 0, 0, .82); }
+dialog.gross img { display: block; max-width: 96vw; max-height: calc(96vh - 3rem); width: auto; height: auto; border-radius: 8px; background: #fff; box-shadow: 0 10px 40px rgba(0, 0, 0, .5); }
+.gross-text { margin: .6rem 0 0; color: #eee; font-size: .9rem; text-align: center; }
+.gross-zu { position: fixed; top: 12px; right: 16px; width: 44px; height: 44px; border: 0; border-radius: 50%; background: rgba(255, 255, 255, .15); color: #fff; font-size: 1.8rem; line-height: 1; cursor: pointer; }
+.gross-zu:hover, .gross-zu:focus-visible { background: rgba(255, 255, 255, .3); }
+@media (prefers-reduced-motion: reduce) { .bildschirm img.zoombar { transition: none; } .bildschirm img.zoombar:hover { transform: none; } }
 
 code { font-family: ui-monospace, Consolas, monospace; font-size: .9em; background: var(--flaeche-2); padding: .1em .35em; border-radius: 4px; }
 
