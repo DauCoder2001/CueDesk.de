@@ -1,5 +1,9 @@
 # Änderungsprotokoll
 
+## 1.7.3 – 05.11.2026
+
+- Logo und Schriftzug „CueDesk“ oben links größer dargestellt
+
 ## 1.7.2 – 05.11.2026
 - Bild Statistik: echter Vorname in der Spielerauswahl durch Fantasienamen „Klaus“ ersetzt
 

@@ -73,10 +73,12 @@ p { margin: 0 0 1em; }
   backdrop-filter: blur(8px);
   border-bottom: 1px solid var(--rand);
 }
-.kopf .huelle { display: flex; align-items: center; gap: 16px; min-height: 64px; }
+.kopf .huelle { display: flex; align-items: center; gap: 16px; min-height: 76px; }
 
 .marke { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--text); font-weight: 700; font-size: 1.2rem; }
 .marke img { width: 36px; height: 36px; border-radius: 50%; }
+.kopf .marke { gap: 12px; font-size: 1.6rem; letter-spacing: -.01em; }
+.kopf .marke img { width: 50px; height: 50px; }
 
 .navi { margin-left: auto; display: flex; align-items: center; gap: 4px; }
 .navi a { color: var(--text); text-decoration: none; padding: 8px 12px; border-radius: 8px; font-size: .97rem; }
@@ -93,7 +95,7 @@ p { margin: 0 0 1em; }
 @media (max-width: 1060px) {
   .menue-knopf { display: block; }
   .navi {
-    display: none; position: absolute; top: 64px; left: 0; right: 0;
+    display: none; position: absolute; top: 76px; left: 0; right: 0;
     flex-direction: column; align-items: stretch; gap: 0;
     background: var(--grund); border-bottom: 1px solid var(--rand); padding: 8px 16px 16px;
   }
