@@ -1,5 +1,15 @@
 # Änderungsprotokoll
 
+## 1.8.0 – 05.11.2026
+
+- Einheitliche Begriffe wie in der App: „TV-Ansicht“ für den Fernseher im Vereinsheim, „Live-Link“ für Zuschauer (statt Live-Anzeige, Live-Ansicht, TV-Anzeige)
+- Knöpfe zum Einstieg heißen überall „Verein anmelden“, Knöpfe für Fragen „Kontakt aufnehmen“
+- Startseite: Überschrift „Ohne Konto, sofort loslegen“ statt „Ohne Konto, ohne Anmeldung“
+- „Symbol“ statt „Icon“ (Home-Bildschirm)
+- TurnierPilot: „CueDesk ansehen“ als Nebenknopf (umrandet), Hauptaktion der Seite bleibt der Download
+- Menü auf dem Handy: schließt auch mit Esc und beim Tippen daneben, der Knopf heißt im offenen Zustand „Schließen“
+- Die aktuelle Seite wird im Menü auch bei Adressen ohne „.html“ markiert
+
 ## 1.7.4 – 05.11.2026
 
 - Bild Live-/TV-Ansicht: „9-Ball“ und „Race to 5“ stehen jetzt bei allen vier Tischen, nicht nur bei Tisch 1

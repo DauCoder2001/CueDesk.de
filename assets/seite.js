@@ -1,24 +1,36 @@
 // CueDesk-Website – gemeinsames Skript aller Seiten.
 // VERSION ist die einzige Stelle, an der die Versionsnummer der Website steht.
-const VERSION = "1.7.4";
+const VERSION = "1.8.0";
 
 document.querySelectorAll("[data-version]").forEach((el) => {
   el.textContent = "Version " + VERSION;
 });
 
-// Aktuelle Seite im Menü markieren
-const seite = location.pathname.split("/").pop() || "index.html";
+// Aktuelle Seite im Menü markieren. Verglichen wird der Seitenname ohne
+// ".html", damit auch Adressen wie /funktionen oder /fragen/ passen.
+const seitenname = (pfad) => pfad.replace(/\/+$/, "").split("/").pop().replace(/\.html$/, "") || "index";
+const seite = seitenname(location.pathname);
 document.querySelectorAll(".navi a[href]").forEach((a) => {
-  if (a.getAttribute("href") === seite) a.setAttribute("aria-current", "page");
+  if (a.classList.contains("knopf")) return;
+  if (seitenname(new URL(a.getAttribute("href"), location.href).pathname) === seite) a.setAttribute("aria-current", "page");
 });
 
-// Menü auf schmalen Bildschirmen
+// Menü auf schmalen Bildschirmen: Knopf "Menü" öffnet, "Schließen", Esc oder
+// ein Tippen außerhalb schließen es wieder.
 const knopf = document.querySelector(".menue-knopf");
 const navi = document.querySelector(".navi");
 if (knopf && navi) {
-  knopf.addEventListener("click", () => {
-    const offen = navi.classList.toggle("offen");
+  const setzen = (offen) => {
+    navi.classList.toggle("offen", offen);
     knopf.setAttribute("aria-expanded", String(offen));
+    knopf.textContent = offen ? "Schließen" : "Menü";
+  };
+  knopf.addEventListener("click", () => setzen(!navi.classList.contains("offen")));
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && navi.classList.contains("offen")) { setzen(false); knopf.focus(); }
+  });
+  document.addEventListener("click", (e) => {
+    if (navi.classList.contains("offen") && !navi.contains(e.target) && !knopf.contains(e.target)) setzen(false);
   });
 }
 
