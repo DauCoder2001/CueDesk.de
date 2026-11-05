@@ -1,0 +1,82 @@
+name: Scoreboards-ZIP
+
+# Haelt downloads/billard-scoreboards.zip und downloads/LICENSE-scoreboards.txt
+# auf dem Stand des Repositorys DauCoder2001/scoreboards (dorthin legt der
+# Workflow "Scoreboards offline" von CueDesk die Offline-Fassung).
+#
+# Einmal taeglich wird nachgesehen, ob sich dort etwas geaendert hat
+# (Vergleich mit downloads/scoreboards-stand.txt). Nur dann wird das ZIP neu
+# gebaut, eingecheckt und mit GitHub Pages veroeffentlicht.
+# Im ZIP: alle Dateien ausser README.md und .nojekyll, dazu LIESMICH.txt aus
+# tools/LIESMICH-scoreboards.txt. Von Hand: Actions -> Scoreboards-ZIP -> Run.
+
+on:
+  schedule:
+    - cron: '41 4 * * *'
+  workflow_dispatch:
+    inputs:
+      erzwingen:
+        description: 'ZIP auch ohne Aenderung neu bauen'
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: scoreboards-zip
+  cancel-in-progress: false
+
+jobs:
+  zip:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Stand vergleichen
+        id: stand
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ERZWINGEN: ${{ inputs.erzwingen }}
+        run: |
+          neu=$(gh api repos/DauCoder2001/scoreboards/commits/main --jq .sha)
+          alt=$(tr -d '\r\n ' < downloads/scoreboards-stand.txt 2>/dev/null || true)
+          echo "Scoreboards: $neu (bisher: ${alt:-keiner})"
+          echo "sha=$neu" >> "$GITHUB_OUTPUT"
+          if [ "$neu" = "$alt" ] && [ "$ERZWINGEN" != "true" ]; then
+            echo "Keine Aenderung, ZIP bleibt."
+            echo "bauen=nein" >> "$GITHUB_OUTPUT"
+          else
+            echo "bauen=ja" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: ZIP bauen
+        if: steps.stand.outputs.bauen == 'ja'
+        env:
+          SHA: ${{ steps.stand.outputs.sha }}
+        run: |
+          arbeit=$(mktemp -d)
+          curl -sSfL -o "$arbeit/quelle.zip" "https://github.com/DauCoder2001/scoreboards/archive/$SHA.zip"
+          unzip -q "$arbeit/quelle.zip" -d "$arbeit/aus"
+          mv "$arbeit"/aus/scoreboards-* "$arbeit/billard-scoreboards"
+          rm -f "$arbeit/billard-scoreboards/README.md" "$arbeit/billard-scoreboards/.nojekyll"
+          cp tools/LIESMICH-scoreboards.txt "$arbeit/billard-scoreboards/LIESMICH.txt"
+          test -f "$arbeit/billard-scoreboards/LICENSE"
+          test -f "$arbeit/billard-scoreboards/index.html"
+          cp "$arbeit/billard-scoreboards/LICENSE" downloads/LICENSE-scoreboards.txt
+          rm -f downloads/billard-scoreboards.zip
+          (cd "$arbeit" && zip -q -X -r -9 "$GITHUB_WORKSPACE/downloads/billard-scoreboards.zip" billard-scoreboards)
+          echo "$SHA" > downloads/scoreboards-stand.txt
+          unzip -l downloads/billard-scoreboards.zip
+
+      - name: Einchecken
+        if: steps.stand.outputs.bauen == 'ja'
+        env:
+          SHA: ${{ steps.stand.outputs.sha }}
+        run: |
+          git add downloads/
+          if git diff --cached --quiet; then echo "Nichts zu tun."; exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Scoreboards-ZIP aktualisiert (scoreboards ${SHA::7})"
+          git push

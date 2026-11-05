@@ -1,5 +1,9 @@
 # Änderungsprotokoll
 
+## 1.6.0 – 05.11.2026
+- Scoreboard-ZIP aktualisiert sich selbst: Ein GitHub-Workflow prüft täglich, ob sich die Scoreboards geändert haben, und baut dann ZIP und Lizenzdatei neu
+- Scoreboards-Seite: Hinweis, dass das ZIP automatisch aktuell gehalten wird
+
 ## 1.5.0 – 05.11.2026
 - TurnierPilot-Seite ohne Links zu GitHub-Seiten: Die Knöpfe laden den Installer direkt
 - „Alle Versionen ansehen“ ersetzt durch die Liste „Frühere Versionen“ direkt auf der Seite (aufklappbar, mit Änderungen und Download)
