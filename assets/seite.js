@@ -1,6 +1,6 @@
 // CueDesk-Website – gemeinsames Skript aller Seiten.
 // VERSION ist die einzige Stelle, an der die Versionsnummer der Website steht.
-const VERSION = "1.7.1";
+const VERSION = "1.7.2";
 
 document.querySelectorAll("[data-version]").forEach((el) => {
   el.textContent = "Version " + VERSION;

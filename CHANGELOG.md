@@ -1,5 +1,8 @@
 # Änderungsprotokoll
 
+## 1.7.2 – 05.11.2026
+- Bild Statistik: echter Vorname in der Spielerauswahl durch Fantasienamen „Klaus“ ersetzt
+
 ## 1.7.1 – 05.11.2026
 - Bild Vereins-Rating: echte Vornamen durch Fantasienamen ersetzt (Gustav, Monika, Bruno)
 
