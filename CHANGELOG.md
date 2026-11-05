@@ -1,5 +1,8 @@
 # Änderungsprotokoll
 
+## 1.3.3 – 05.11.2026
+- Startseite: Überschrift „Interessant für euren Verein?“ statt „Interesse für euren Verein?“
+
 ## 1.3.2 – 04.11.2026
 - TurnierPilot, Schritt „Herunterladen“: Download-Knopf kleiner und passend zum Text
 
