@@ -1,5 +1,10 @@
 # Änderungsprotokoll
 
+## 1.5.0 – 05.11.2026
+- TurnierPilot-Seite ohne Links zu GitHub-Seiten: Die Knöpfe laden den Installer direkt
+- „Alle Versionen ansehen“ ersetzt durch die Liste „Frühere Versionen“ direkt auf der Seite (aufklappbar, mit Änderungen und Download)
+- Ist GitHub nicht erreichbar, laden die Knöpfe Version 0.32.1, die sich danach selbst aktualisiert
+
 ## 1.4.0 – 05.11.2026
 - Scoreboards: ZIP und MIT-Lizenz liegen jetzt direkt auf www.cuedesk.de (Ordner downloads), keine Links mehr zu GitHub
 - Im ZIP eine kurze Anleitung LIESMICH.txt statt der Entwickler-Notizen
