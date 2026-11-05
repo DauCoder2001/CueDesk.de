@@ -1,5 +1,9 @@
 # Änderungsprotokoll
 
+## 1.7.4 – 05.11.2026
+
+- Bild Live-/TV-Ansicht: „9-Ball“ und „Race to 5“ stehen jetzt bei allen vier Tischen, nicht nur bei Tisch 1
+
 ## 1.7.3 – 05.11.2026
 
 - Logo und Schriftzug „CueDesk“ oben links größer dargestellt
