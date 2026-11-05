@@ -1,5 +1,9 @@
 # Änderungsprotokoll
 
+## 1.7.0 – 05.11.2026
+- Hinweis „ideal für 3 bis 8 Tische“: auf der Startseite bei den Merkmalen, bei „Für Vereine“ in der Karte „Tische“
+- Fragen: neuer Eintrag „Für welche Vereinsgröße ist CueDesk gedacht?“ (erprobt mit 3 bis 8 Tischen, andere Größen gern anfragen)
+
 ## 1.6.0 – 05.11.2026
 - Scoreboard-ZIP aktualisiert sich selbst: Ein GitHub-Workflow prüft täglich, ob sich die Scoreboards geändert haben, und baut dann ZIP und Lizenzdatei neu
 - Scoreboards-Seite: Hinweis, dass das ZIP automatisch aktuell gehalten wird
