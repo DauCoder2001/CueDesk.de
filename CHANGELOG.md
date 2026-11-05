@@ -1,5 +1,10 @@
 # Änderungsprotokoll
 
+## 1.4.0 – 05.11.2026
+- Scoreboards: ZIP und MIT-Lizenz liegen jetzt direkt auf www.cuedesk.de (Ordner downloads), keine Links mehr zu GitHub
+- Im ZIP eine kurze Anleitung LIESMICH.txt statt der Entwickler-Notizen
+- Knopf „Auf GitHub ansehen“ ersetzt durch „MIT-Lizenz lesen“
+
 ## 1.3.3 – 05.11.2026
 - Startseite: Überschrift „Interessant für euren Verein?“ statt „Interesse für euren Verein?“
 

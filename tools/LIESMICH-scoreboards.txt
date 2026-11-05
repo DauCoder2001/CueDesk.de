@@ -1,0 +1,32 @@
+Billard-Scoreboards
+===================
+
+Offline-Scoreboards für Pool (8-, 9- und 10-Ball) und 14.1 endlos.
+Jedes Board ist eine einzige HTML-Datei: kein Server, keine Installation,
+kein Internet nötig. Der Spielstand wird im Browser gespeichert.
+
+So geht's
+---------
+1. Diesen Ordner entpacken.
+2. index.html im Browser öffnen und ein Scoreboard wählen.
+3. Zum Anpassen die gewünschte Datei mit einem Texteditor öffnen,
+   ändern und speichern.
+4. Für die Tablets im Verein: den Ordner auf euren Webspace legen und
+   die Adresse auf den Tablets öffnen.
+
+Dateien
+-------
+index.html        Startseite, Spielauswahl
+index_pool.html   Scoreboard 8/9/10-Ball
+index141.html     Scoreboard 14.1 endlos
+14.1_Log.html     Aufnahme-Protokoll zum 14.1-Scoreboard
+manifest.json     Vollbild ohne Adressleiste auf dem Tablet
+LICENSE           MIT-Lizenz
+
+Lizenz
+------
+MIT-Lizenz, siehe Datei LICENSE. Ihr dürft die Scoreboards kostenlos nutzen,
+verändern und weitergeben. Der Hinweis "Copyright (c) 2026 Matthias Haas"
+und der Lizenztext müssen dabei erhalten bleiben.
+
+Online ausprobieren und neueste Fassung: https://www.cuedesk.de/scoreboards.html
