@@ -1,5 +1,9 @@
 # Änderungsprotokoll
 
+## 1.8.1 – 10.11.2026
+
+- TurnierPilot: Hinweis „Ohne Gewähr“ im Abschnitt „Installieren und aktuell halten“ (kostenlos, privat entwickelt, Haftung nur bei Vorsatz und grober Fahrlässigkeit, Daten zusätzlich sichern)
+
 ## 1.8.0 – 05.11.2026
 
 - Einheitliche Begriffe wie in der App: „TV-Ansicht“ für den Fernseher im Vereinsheim, „Live-Link“ für Zuschauer (statt Live-Anzeige, Live-Ansicht, TV-Anzeige)
